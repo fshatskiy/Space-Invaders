@@ -23,7 +23,7 @@ public class Movement {
             for(int j = 0; j<10; j++){
                 if(Grille.getGrille()[i][j] == 1){
                     Grille.getGrille()[i][j] = 0;
-                    int newPos = j+1;
+                    int newPos = j-1;
                     Grille.getGrille()[i][newPos] =1 ;
                 }
 
