@@ -6,6 +6,10 @@ public class Movement {
 
     private Scanner scanner;
 
+
+    /*
+    Déplacement du X vers la gauche crée dans la classe Grille
+     */
     public void move() {
 
         scanner = new Scanner(System.in);
@@ -16,7 +20,10 @@ public class Movement {
         }
     }
 
-
+/*
+    On parcours la grille pour trouver le X initial
+    Dès qu'il est repéré on le déplace vers la gauche en remplacant sa ancienne position par le Vide
+ */
     public void left(){
 
         for(int i =0; i<10; i++){
